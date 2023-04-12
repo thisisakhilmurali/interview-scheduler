@@ -1,0 +1,125 @@
+<section class="login-page">
+    <div class="container">
+        <div class="card login-card">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="title">Interview Scheduler</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="name">
+                                <span class="req">*</span>
+                                Name:
+                                <small>This will be your login user name</small>
+                            </label>
+                            <input required type="text" [(ngModel)]="user.name" name="name" id="name" class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="email">
+                                <span class="req">*</span>
+                                Email:
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.email" name="email" id="email" required placeholder="Enter valid email address" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="phn">
+                                <span class="req">*</span>
+                                Phone Number:
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.phnumber" name="phn" id="phn" required placeholder="Enter phone number" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="skills">
+                                <span class="req">*</span>
+                                Skills
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.skills" name="skills" id="skills" required placeholder="Enter Skills" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="experience">
+                                <span class="req">*</span>
+                                Experience
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.experience" name="experience" id="experience" required placeholder="Enter Skills" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="date">
+                                <span class="req">*</span>
+                                Date
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.date" name="date" id="date" required placeholder="Enter Date" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="time">
+                                <span class="req">*</span>
+                                time
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.time" name="time" id="time" required placeholder="Enter Time" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="link">
+                                <span class="req">*</span>
+                                Link
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.link" name="link" id="link" required placeholder="Enter Link" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <label for="poc">
+                                <span class="req">*</span>
+                                POC
+                            </label>
+                            <input class="form-control" type="text" [(ngModel)]="user.poc" name="poc" id="poc" required placeholder="Enter POC" />
+                            <div id="errFirst"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn btn-info custom-btn" type="submit" (click)="addTheRecord()">Add Record</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
